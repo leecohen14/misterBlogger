@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>misterBlogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="onMainScreen(),closeModal()"></div>
+    <header class="main-header">
+        <div class="header-container main-layout flex space-between align-center">
+            <div class="logo">Blogin<span class="logo-span">.</span></div>
+            <ul class="main-nav clean-list flex">
+                <li><a class="current-page" href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+        </div>
+
+    </header>
+
+    <main class="main-content main-layout cards-container flex wrap border">
+        <div class="card flex">
+            <img src="img/Layer 2@1X.png" alt="" class="card-image" />
+            <div class="card-info flex column">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="btn-read" onclick="openModal()">continue reading</button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img src="img/Layer 3@1X.png" alt="" class="card-image" />
+            <div class="card-info flex column">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="btn-read" onclick="openModal()">continue reading</button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img src="img/Layer 4@1X.png" alt="" class="card-image last-img" />
+            <div class="card-info flex column">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="btn-read" onclick="openModal()">continue reading</button>
+            </div>
+        </div>
+
+        <div class="move-pages">
+            <a class="prev">← previous</a>
+            <a class="next">next →</a>
+        </div>
+    </main>
+
+
+
+    <footer class="main-footer">
+        <div class="footer-container main-layout flex column">
+            <div class="logo">Blogin<span style="color: green;">.</span></div>
+
+            <div class="social-container flex column">
+                <div class="copyright"> © 2014 Blogin.com &nbsp-&nbsp All Rights Reserved &nbsp-&nbsp Find more free Templates at Pixelhint.com</div>
+                <ul class="social-nav clean-list">
+                    <li class="facebook">
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="twitter">
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li class="behance">
+                        <a href="#" class="fa fa-behance"></a>
+                    </li>
+                    <li class="dribbble">
+                        <a href="#" class="fa fa-dribbble"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" style="display: none;">
+        <button class="btn-close-modal" onclick="closeModal()">X</button>
+        <br>
+        <div class="modal-main-content">
+            <h3>Join us to get access to the latest stories!</h3>
+            <form id="frmPrefs" onsubmit="onSubmit(event)">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button class="btn-submit" type="submit">send</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
